@@ -13,6 +13,8 @@ def index():
 
 @app.route('/postNumbers', methods=['POST'])
 def postNumere():
+    
+    #nu inteleg de ce e cu print aici
     print(request.json)
 
     global a
@@ -52,6 +54,6 @@ def getRezultat():
 
 
 
-
+#nu prea inteleg care e treaba cu asta:
 if __name__ == '__main__':
 		app.run(debug=True)
