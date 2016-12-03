@@ -30,23 +30,23 @@ def getRezultat():
 
     error='unknown operation'
     result=0
-    if op='+':
+    if op=='+':
         result=a+b
         error='all ok'
-    if op='-':
+    if op=='-':
         result=a-b
         error='all ok'
-    if op='*':
+    if op=='*':
         result=a*b
         error='all ok'
-    if op='/':
+    if op=='/':
         if b==0:
             error='divide by 0 impossible'
         else:  
             result=a/b
             error='all ok'
     
-    return jsonify({'result': result, 'error':error})
+    return jsonify({'result': result, 'error': error})
 
 
 
