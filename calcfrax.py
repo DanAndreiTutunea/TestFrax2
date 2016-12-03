@@ -17,20 +17,19 @@ def postNumere():
 
     global a
     global b
-	a = request.json['a']
-	b = request.json['b']
     global op
+    a = request.json['a']
+    b = request.json['b']
     op = request.json['op']
-
-	return "got it"
+    
+    return "got it"
 
 
 @app.route('/getResult', methods=['GET'])
 def getRezultat():
 
-    error='unknown operation
+    error='unknown operation'
     result=0
-
     if op='+':
         result=a+b
         error='all ok'
